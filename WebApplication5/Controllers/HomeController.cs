@@ -13,15 +13,34 @@ namespace WebApplication5.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index()
+        public ActionResult Index()
+        {
+            
+            return View();
+        }
+
+        public IActionResult Student()
+        {
+            return View();
+        }
+        public IActionResult Course()
+        {
+            return View();
+        }
+        public IActionResult Section()
+        {
+            return View();
+        }
+        public IActionResult Room()
+        {
+            return View();
+        }
+        public IActionResult Teacher()
         {
             return View();
         }
 
-        public IActionResult Privacy()
-        {
-            return View();
-        }
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
